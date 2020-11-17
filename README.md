@@ -8,6 +8,11 @@
 ## [Heroku App](https://jinahwang-cpnt262-a5.herokuapp.com)
 
 ## GET Endpoints
+- Gallery
+https://jinahwang-cpnt262-a5.herokuapp.com/api/v0/bongs
+- ID 1
+https://jinahwang-cpnt262-a5.herokuapp.com/api/v0/1
+- non existent endpoint
+https://jinahwang-cpnt262-a5.herokuapp.com/api/v0/10
 
- 
-
+#### **Patrick Bello** helped me connecting heroku app and mongodb.
