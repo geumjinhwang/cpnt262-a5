@@ -6,7 +6,7 @@ const ejs = require('ejs');
 require('dotenv').config();
 
 // import models
-const bongs = require('./models/bongs.js');
+const Bongs = require('./models/bongs.js');
 
 // create express
 const app = express();
