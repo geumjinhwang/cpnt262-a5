@@ -39,12 +39,16 @@ app.get('/', (req, res) => {
 });
 
 // endpoint, array of objects
-app.get('/api/v0/bongs', (req, res) => {
-  Bongs.find(function(err, data) {
-    console.log(data);
-    res.json(data)
+app.get('/api/v0/bongs', function(request,response){
+  Bongs.find({}, function(error,data){
+    if (error) {
+      response.send('file does not exist')
+    }
+    else {
+      response.json(data);
+    }
   });
-})
+});
 
 // endpoint, specified id for objects
 app.get('/api/v0/bongs/:id', (req, res) => {

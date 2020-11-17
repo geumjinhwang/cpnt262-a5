@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 // seed data
-const dbSeed = require(`./seeds/pcparts.js`);
+const dbSeed = require(`./seeds/bongs.js`);
 
 // model defined
-const Pcpart = require(`./models/pcpart.js`);
+const Bongs = require(`./models/bongs.js`);
 
 // mongoose
 mongoose.connect(process.env.MONGODB_URL, {
